@@ -12,6 +12,16 @@
 
 @include('components.Home.authorship')
 
+@include('components.Home.media')
+
+@include('components.Home.books')
+
+@include('components.Home.quote')
+
+@include('components.Home.journey')
+
+@include('components.Home.expertise')
+
 @section('content')
 
 @endsection
