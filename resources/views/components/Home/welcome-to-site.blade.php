@@ -19,10 +19,6 @@
             <br>
             I would like to thank you for visiting my website in which you will find an abundance of my writings and big ideas that you can download with my compliments. And if you are interested to talk, work, or engage with me on any of your endeavors, do not hesitate to reach out; my coordinates are in the ‘Talk to Charles’ section. I do hope that you benefit from my thoughts on the various topics I address, and would be very glad to talk to you on any topic, ideas, or initiative that you need advice or contribution from a grey haired learner!
         </p>
-
-        <div class="abs-image">
-            <img src="/images/abs-image.png" >
-        </div>
-
+        
     </div>
 </div>

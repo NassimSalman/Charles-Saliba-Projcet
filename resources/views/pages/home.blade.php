@@ -6,22 +6,24 @@
 
 @endsection
 
+@section('content')
+
 @include('components.header')
 
-@include('components.Home.welcome-to-site')
+@include('components.home.welcome-to-site')
 
-@include('components.Home.authorship')
+@include('components.home.authorship')
 
-@include('components.Home.media')
+@include('components.home.home-media')
 
-@include('components.Home.books')
+@include('components.home.home-books')
 
-@include('components.Home.quote')
+@include('components.home.quote')
 
-@include('components.Home.journey')
+@include('components.home.journey')
 
-@include('components.Home.expertise')
+@include('components.home.expertise')
 
-@section('content')
+@include('components.footer')
 
 @endsection

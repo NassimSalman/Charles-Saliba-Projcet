@@ -12,9 +12,26 @@
                 <h1> Leadership And Governance </h1>
             </div>
             <div class="box-content">
-                <h2> Leadership </h2>
-                <h2> Governance </h2>
-                <h2> Management </h2>
+
+                <span>
+                    <h2> Leadership </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+
+                <span>
+                    <h2> Governance </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+
+                <span>
+                    <h2> Management </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
             </div>
         </div>
 
@@ -24,9 +41,26 @@
                 <h1> Human Resources </h1>
             </div>
             <div class="box-content">
+
+            <span>
                 <h2> Human Resources Strategy </h2>
-                <h2> Human Resources Management </h2>
-                <h2> Personal Development </h2>
+                <a href="#"> <img src="/images/send-arrow.png"> </a>
+            </span>
+
+                <hr class="line">
+            
+                <span>
+                    <h2> Human Resources Management </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+                
+                <span>
+                    <h2> Personal Development </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+                
             </div>
         </div>
 
@@ -37,10 +71,31 @@
             </div>
             <div class="box-content">
 
-                <h2> Economic Affairs </h2>
-                <h2> Social Affairs </h2>
-                <h2> Political Affairs </h2>
-                <h2> Religious Affairs </h2>
+                <span>
+                    <h2> Economic Affairs </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+
+                <span>
+                    <h2> Social Affairs </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+
+                <span>
+                    <h2> Political Affairs </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
+
+                <hr class="line">
+
+                <span>
+                    <h2> Religious Affairs </h2>
+                    <a href="#"> <img src="/images/send-arrow.png"> </a>
+                </span>
 
             </div>
         </div>

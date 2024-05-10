@@ -1,4 +1,4 @@
-<div class="media">
+<div class="home-media">
 
     <div class="media-header margin ">
 
