@@ -557,7 +557,7 @@
     }
 
     .contact-us {
-        height: 60%;
+        height: 70%;
         background-color: black;
 
         .contact-info {
@@ -1075,6 +1075,7 @@
 
         .submit {
             margin-top: 20px;
+
             a {
                 text-align: left;
                 font-style: normal;
@@ -1087,5 +1088,194 @@
                 padding-right: 40px;
             }
         }
+    }
+}
+
+// resume-image
+
+.resume-image {
+    padding-top: 60px;
+    position: relative;
+
+    .image {
+        position: relative;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .title {
+        position: absolute;
+        top: 60%;
+        left: 3.5%;
+        // transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        max-width: 400px;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+//resume-details
+
+.resume-details {
+    margin-right: 50px;
+
+    .experience {
+        margin-top: 50px;
+        display: flex;
+        gap: 10%;
+
+        .resume-info {
+            display: flex;
+            align-items: start;
+            gap: 20px;
+            width: 30%;
+
+            h1 {
+                text-align: left;
+                font: normal normal 600 20px/42px Kanit;
+                color: #135D66;
+                text-transform: capitalize;
+                opacity: 1;
+            }
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        .info-details {
+            max-width: 800px;
+            align-items: center;
+            width: 70%;
+
+            li {
+                text-align: left;
+                font: normal normal normal 15px/28px Kanit;
+                color: #333333;
+                opacity: 1;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            li::marker {
+                color: #135D66;
+            }
+        }
+
+        .expertise-info {
+            max-width: 800px;
+            align-items: center;
+            width: 70%;
+            display: flex;
+            gap: 20%;
+
+            li {
+                text-align: left;
+                font: normal normal normal 15px/28px Kanit;
+                color: #333333;
+                opacity: 1;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            li::marker {
+                color: #135D66;
+            }
+        }
+
+        .work-details {
+            max-width: 800px;
+            align-items: center;
+            width: 70%;
+            position: relative;
+
+            li {
+                text-align: left;
+                font: normal normal normal 15px/28px Kanit;
+                color: #333333;
+                opacity: 1;
+                line-height: 1.5;
+                margin-bottom: 10px;
+                position: relative;
+                margin-left: 14%;
+            }
+
+            li:before {
+                content: attr(data-before); // Use the "data-before" attribute as content
+                position: absolute; // Set position to absolute for the text before each item
+                top: 0; // Align text at the top of each list item
+                left: -13%; // Position text at the beginning of each list item
+                margin-left: -20px; // Adjust margin to pull text into place
+                margin-right: 5px;
+                text-align: left;
+                font: normal normal 600 15px/28px Kanit;
+                letter-spacing: 0px;
+                color: #135D66;
+                text-transform: uppercase;
+                opacity: 1;
+                // Add spacing between the text and the list item content
+            }
+
+            li:nth-child(1):before {
+                content: "2011 - 2014  ";
+            }
+
+            li:nth-child(2):before {
+                content: "2010 - 2014  ";
+            }
+
+            li:nth-child(3):before {
+                content: "2012 – 2017  ";
+            }
+
+            li:nth-child(4):before {
+                content: "2014  ";
+            }
+
+            li:nth-child(5):before {
+                content: "2007 - 2008";
+            }
+
+            li:nth-child(6):before {
+                content: "2006";
+            }
+
+            li:nth-child(7):before {
+                content: "1996 - 2006";
+            }
+
+            li:nth-child(8):before {
+                content: "2000 - 2004";
+            }
+
+            li:nth-child(9):before {
+                content: "1999 - 2003";
+            }
+
+
+        }
+    }
+
+    .resume-line {
+        border: 1px solid #333333;
+        opacity: 0.15;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
