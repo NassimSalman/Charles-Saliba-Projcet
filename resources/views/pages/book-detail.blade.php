@@ -10,7 +10,7 @@
 
 @include('components.header')
 
-@include('components.book-details.book-details')
+@include('components.book-details.book-detail')
 
 @include('components.footer')
 

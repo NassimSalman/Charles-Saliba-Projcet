@@ -1,3 +1,4 @@
+<div  id="resume"></div>
 <div class="expertise margin">
 
     <div class="profile margin">
@@ -14,7 +15,7 @@
             Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget. Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed nisi.
         </p>
 
-        <a class="hovered-button" href="#"> View All Resume </a>
+        <a class="hovered-button" href="/resume"> View All Resume </a>
 
     </div>
 

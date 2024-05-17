@@ -3,6 +3,6 @@
         <img src="/images/quote.svg">
     </div>
     <div class="quote">
-        <h1> Life Is Like A Bicycle, To Keep Your Balance, You Must Keep Moving. </h1>
+        <h1> {{$quote -> quote}} </h1>
     </div>
 </div>

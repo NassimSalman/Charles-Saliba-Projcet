@@ -1,21 +1,20 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/',[HomeController::class , 'render'] );
 
 Route::get('/media', function () {
     return view('pages.media');
 });
 
 Route::get('/books', function () {
-    return view('pages.books');
+    return view('pages.book');
 });
 
 Route::get('/book-details', function () {
-    return view('pages.book-details');
+    return view('pages.book-detail');
 });
 
 Route::get('/contact-us', function () {

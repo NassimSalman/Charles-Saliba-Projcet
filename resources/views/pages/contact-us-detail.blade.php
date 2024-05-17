@@ -10,7 +10,7 @@
 
 @include('components.header')
 
-@include('components.contact-us.contact-us')
+@include('components.contact-us.contact-us-detail')
 
 @include('components.footer')
 

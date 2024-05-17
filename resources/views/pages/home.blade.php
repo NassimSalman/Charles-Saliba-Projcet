@@ -16,13 +16,13 @@
 
 @include('components.home.home-media')
 
-@include('components.home.home-books')
+@include('components.home.home-book')
 
 @include('components.home.quote')
 
 @include('components.home.journey')
 
-@include('components.home.expertise')
+@include('components.home.expertise-detail')
 
 @include('components.footer')
 

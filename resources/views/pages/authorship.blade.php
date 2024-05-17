@@ -10,4 +10,10 @@
 
 @include('components.header')
 
+@include('components.authorship.leadership')
+
+@include('components.authorship.article')
+
+@include('components.footer')
+
 @endsection

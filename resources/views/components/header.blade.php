@@ -1,16 +1,16 @@
 <header id="header">
     <div class="logo">
       
-            <img src="/images/charles-saliba-logo.svg" alt="Logo">
+           <a href="/"> <img src="/images/charles-saliba-logo.svg" alt="Logo"> </a> 
     
     </div>
     <nav id="nav">
-        <a id="" href=""> Welcome to My Site </a>
-        <a id="" href=""> Authorship </a>
-        <a id="" href=""> Media </a>
-        <a id="" href=""> Books </a>
-        <a id="" href=""> My Journey </a>
-        <a id="" href=""> Resume </a>
-        <a class="hovered-button" href=""> Book a Consultation </a>
+        <a id="" href="/#welcome"> Welcome to My Site </a>
+        <a id="" href="/#authorship"> Authorship </a>
+        <a id="" href="/#media"> Media </a>
+        <a id="" href="/#books"> Books </a>
+        <a id="" href="/#my-journey"> My Journey </a>
+        <a id="" href="/#resume"> Resume </a>
+        <a class="hovered-button" href="/contact-us"> Book a Consultation </a>
     </nav>
 </header>

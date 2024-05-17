@@ -12,7 +12,7 @@
 
 @include('components.resume.resume-image')
 
-@include('components.resume.resume-details')
+@include('components.resume.resume-detail')
 
 @include('components.footer')
 

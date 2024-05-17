@@ -8,6 +8,6 @@ class BookDetailsController extends Controller
 {
     public function render(){
 
-        return view('pages.book-details');
+        return view('pages.book-detail');
     }
 }
