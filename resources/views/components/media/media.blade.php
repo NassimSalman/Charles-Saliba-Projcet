@@ -1,195 +1,23 @@
 <div class="media margin">
-
-    <h1 class="titles margin"> My Media </h1>
-
-
+    <h1 class="titles margin"> {{__('text.media')}} </h1>
     <div class="f-carousel" id="myCarousel">
-
+        @php
+            $chunks = array_chunk($media, 8);
+        @endphp
+        @foreach($chunks as $chunk)
         <div class="f-carousel__slide">
             <div class="grid-container margin">
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
+                @foreach($chunk as $media)
+                <div class="grid-item">
+                    <a href="#">
+                        <img src="{{ $media->video }}" alt="Image 1">
+                        <div class="image-title">{{ $media->video_title }}</div>
+                    </a>
+                </div>
+                @endforeach
             </div>
         </div>
-
-        <div class="f-carousel__slide">
-            <div class="grid-container margin">
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
-        <div class="f-carousel__slide">
-            <div class="grid-container margin">
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="grid-item">
-                        <img src="/images/video1.png" alt="Image 1">
-                        <div class="image-title"> Title of the video </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 
@@ -197,7 +25,7 @@
 <script>
     const container = document.getElementById("myCarousel");
     const options = {
-        infinite: true
+        infinite: true,
     };
 
     new Carousel(container, options);

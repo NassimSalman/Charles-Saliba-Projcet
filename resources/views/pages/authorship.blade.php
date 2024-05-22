@@ -2,7 +2,7 @@
 
 @section('head')
 
-<title> Authorship </title>
+<title> {{ __('text.authorship') }} </title>
 
 @endsection
 
@@ -10,7 +10,7 @@
 
 @include('components.header')
 
-@include('components.authorship.leadership')
+@include('components.authorship.authorship')
 
 @include('components.authorship.article')
 

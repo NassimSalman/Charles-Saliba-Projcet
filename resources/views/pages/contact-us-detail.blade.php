@@ -2,7 +2,7 @@
 
 @section('head')
 
-<title> Contact Us </title>
+<title> {{ __('text.contact_us') }} </title>
 
 @endsection
 
@@ -10,7 +10,7 @@
 
 @include('components.header')
 
-@include('components.contact-us.contact-us-detail')
+@include('components.contact-us.contact-us-content')
 
 @include('components.footer')
 

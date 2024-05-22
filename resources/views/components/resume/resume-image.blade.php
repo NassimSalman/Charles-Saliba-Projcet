@@ -1,9 +1,9 @@
 <div class="resume-image">
     <div class="image">
-        <img src="/images/resume-image.png">
+        <img src="{{$resume_image -> image}}">
     </div>
     <div class="title">
-        <h1 class="titles"> Charles Saliba </h1>
-        <p class="paragraph"> The Positive Influencer, The Entrepreneur, The Thinker, The Author, The Consultant, And The Advisor Of Leaders </p>
+        <h1 class="titles"> {{ $resume_image -> image_title }} </h1>
+        <p class="paragraph"> {{ $resume_image -> image_text }} </p>
     </div>
 </div>

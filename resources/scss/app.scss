@@ -6,7 +6,7 @@
 
 
 ::-webkit-scrollbar {
-    @apply hidden;
+    display: none;
 }
 
 $main-font: Kanit;
@@ -25,7 +25,7 @@ $main-color: #135D66;
 }
 
 .margin {
-    margin-left: 24px;
+    margin-left: 23px;
     margin-right: 24px;
 }
 
@@ -42,7 +42,7 @@ $main-color: #135D66;
     position: relative;
     overflow: hidden;
     height: 20px;
-    width: fit-content;
+    width: 180px;
     padding: 18px;
     display: flex;
     justify-content: center;
@@ -75,6 +75,33 @@ $main-color: #135D66;
 }
 
 // header
+
+@media screen and (max-width: 1208px) {
+
+    #header {
+
+        padding: 20px;
+
+        #nav {}
+    }
+
+}
+
+@media screen and (min-width: 1190px) {
+
+    #header {
+
+        padding: 20px;
+
+        #nav {
+            a{
+             font-size: 20px;
+            }
+        }
+    }
+
+}
+
 
 #header {
     display: flex;
@@ -555,14 +582,15 @@ $main-color: #135D66;
             padding-left: 10%;
             margin-right: 10%;
             height: 100%;
-            
+
             .dot {
                 font-size: 40px;
                 color: $main-color;
                 z-index: 2;
             }
 
-            .text1-3, .text2-4 {
+            .text1-3,
+            .text2-4 {
                 display: flex;
                 flex-direction: column;
             }
@@ -574,10 +602,11 @@ $main-color: #135D66;
 
             .big-dot {
                 img {
-                height: 20px;
-                width: 20px;
+                    height: 20px;
+                    width: 20px;
+                }
             }
-        }
+
             .history-date {
                 text-align: left;
                 font: normal normal 600 18px/30px $main-font;
@@ -587,7 +616,7 @@ $main-color: #135D66;
                 margin-left: 25px;
             }
 
-            .info{
+            .info {
                 h1 {
                     text-align: left;
                     font: normal normal normal 12px/15px Kanit;
@@ -595,30 +624,33 @@ $main-color: #135D66;
                     opacity: 1;
                     width: fit-content;
                 }
-    
-            } 
-            .text1-3 {
-               margin-top: -120px;
+
             }
+
+            .text1-3 {
+                margin-top: -120px;
+            }
+
             .text2-4 {
-               padding-top: 150px;
+                padding-top: 150px;
             }
         }
     }
 
     .is-horizontal .f-carousel__nav .f-button.is-next {
         top: -20px;
-        left: 92%;
+        left: 93.5%;
         border-radius: 20px;
         content: url('/public/images/send-arrow2.svg');
     }
 
     .is-horizontal .f-carousel__nav .f-button.is-prev {
         top: -20px;
-        left: 88%;
+        left: 89.5%;
         border-radius: 20px;
         content: url('/public/images/send-arrow3.svg');
     }
+
 }
 
 
@@ -693,9 +725,8 @@ $main-color: #135D66;
 
         a {
             position: absolute;
-            right: 5%;
-            top: 52%;
-            width: 110px;
+            right: 4.25%;
+            top: 52.75%;
             text-align: left;
             font-style: normal;
             font-weight: normal;
@@ -891,6 +922,7 @@ $main-color: #135D66;
                 width: 10px;
                 height: 10px;
                 margin-top: 10%;
+
 
             }
         }
@@ -1115,6 +1147,7 @@ $main-color: #135D66;
 .contact-us {
 
     padding-top: 5%;
+    padding-left: 5px;
 
     .contact-us-header {
         h1 {}
@@ -1502,13 +1535,27 @@ $main-color: #135D66;
     margin-top: 50px;
     display: flex;
 
+    // .articles-container::-webkit-scrollbar {
+    //     width: 12px; /* width of the scrollbar */
+    //     display: block;
+    // }
+
     .articles-container {
-        height: fit-content;
+        height: 743px;
         width: 60%;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 0px 30px #00000012;
         opacity: 1;
         padding: 20px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: block;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
 
         h1 {
             font-size: 30px;
@@ -1531,6 +1578,10 @@ $main-color: #135D66;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
+                // display: inline-block;
+                cursor: pointer;
+
+
 
                 p {
                     font: normal normal 600 14px/20px $main-font;
@@ -1542,9 +1593,19 @@ $main-color: #135D66;
                     align-items: center;
                 }
             }
+
+            .active {
+                border-color: $main-color;
+
+                p {
+                    color: $main-color;
+                }
+            }
         }
 
-        .all-articles {
+        .all-articles-english,
+        .all-articles-arabic {
+
             .article-details {
                 display: flex;
                 justify-content: space-between;

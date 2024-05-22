@@ -14,7 +14,7 @@
         <h1 class="titles"> {{ $welcome_to_site -> sub_title }} </h1>
 
         <p class="paragraph">
-            {{ $welcome_to_site -> paragraph }}
+            {!! nl2br($welcome_to_site -> paragraph) !!}
         </p>
 
     </div>

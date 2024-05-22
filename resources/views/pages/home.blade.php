@@ -2,7 +2,7 @@
 
 @section('head')
     
-    <title> Home </title>
+    <title> {{ __('text.home_title') }} </title>
 
 @endsection
 
@@ -10,20 +10,6 @@
 
 @include('components.header')
 
-@include('components.home.welcome-to-site')
 
-@include('components.home.authorship')
-
-@include('components.home.home-media')
-
-@include('components.home.home-book')
-
-@include('components.home.quote')
-
-@include('components.home.journey')
-
-@include('components.home.expertise-detail')
-
-@include('components.footer')
 
 @endsection

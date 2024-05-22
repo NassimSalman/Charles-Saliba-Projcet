@@ -2,7 +2,7 @@
 
 @section('head')
     
-    <title> Media </title>
+    <title> {{ __('text.media') }} </title>
 
 @endsection
 

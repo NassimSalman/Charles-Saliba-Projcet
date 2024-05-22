@@ -1,8 +1,7 @@
-<div id="my-journey"></div>
-<div class="journey">
+<div class="journey" id="my-journey">
 
     <div class="journey-header margin">
-        <h1 class="titles"> My Journey </h1>
+        <h1 class="titles margin"> {{ __('text.journey_title') }} </h1>
     </div>
 
 
@@ -50,8 +49,7 @@
                     @endif
                 </div> 
             </div>
-            
-            
+
             <div class="dashed-line"></div>
         </div>  
         @endforeach

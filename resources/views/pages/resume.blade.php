@@ -2,7 +2,7 @@
 
 @section('head')
     
-    <title> Resume </title>
+    <title> {{ __('text.resume') }} </title>
 
 @endsection
 

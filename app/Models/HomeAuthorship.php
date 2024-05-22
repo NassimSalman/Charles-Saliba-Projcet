@@ -5,20 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Authorship extends Model
+class HomeAuthorship extends Model
 {
-    public static function getAuthorship($id)
-    {
-        $authorship = self::findOrFail($id);
-       
-       
-        return $authorship;
-    }
-    
     public static function getHomeAuthorship()
     {
         $home_authorship = self::all();
-        return $home_authorship;
         // $authorship = [
 
         //     (object) [
@@ -52,6 +43,7 @@ class Authorship extends Model
         //         'arrow' => '/images/send-arrow.png',
         //     ],         
         // ];
+        return $home_authorship;
     }
     
 }

@@ -2,7 +2,7 @@
 
 @section('head')
 
-<title> Book Details </title>
+<title> {{ __('text.book_details') }} </title>
 
 @endsection
 

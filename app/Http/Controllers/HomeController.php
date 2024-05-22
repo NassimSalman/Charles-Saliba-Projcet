@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\WelcomeToSite;
 use App\Models\Authorship;
+use App\Models\Book;
+use App\Models\WelcomeToSite;
+use App\Models\HomeAuthorship;
 use App\Models\HomeMediaFirstSlide;
 use App\Models\HomeMediaSecondSlide;
 use App\Models\HomeBook;
 use App\Models\Quote;
 use App\Models\Journey;
-
+use App\Models\Expertise;
 
 use Illuminate\Http\Request;
 
@@ -19,19 +21,23 @@ class HomeController extends Controller
 
         $welcome_to_site = WelcomeToSite::getWelcomeToSite();
 
-        $authorship = Authorship::getAuthorship();
+        $home_authorship = HomeAuthorship::getHomeAuthorship();
         
-        $home_media_slide1 = HomeMediaFirstSlide::getHomeMediaFirstSlide();
+        $home_media_first_slide = HomeMediaFirstSlide::getHomeMediaFirstSlide();
         
-        $home_media_slide2 = HomeMediaSecondSlide::getHomeMediaSecondSlide();
+        $home_media_second_slide = HomeMediaSecondSlide::getHomeMediaSecondSlide();
         
-        $home_book = HomeBook::getHomeBook();
+        $home_book = Book::getHomeBook();
        
-        $quote = Quote::getquote();
+        $quote = Quote::getQuote();
 
-        $journey = Journey::getjourney();
+        $journey = Journey::getJourney();
         
-        return view('pages.home', compact('welcome_to_site', 'authorship', 'home_media_slide1','home_media_slide2', 'home_book', 'quote', 'journey'));
+        $expertise = Expertise::getExpertise();
+        
+        
+        return view('pages.home', compact('welcome_to_site', 'home_authorship', 'home_media_first_slide','home_media_second_slide', 'home_book', 'quote', 'journey', 'expertise'));
 
     }
+
 }
